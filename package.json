@@ -1,0 +1,43 @@
+{
+  "name": "musix-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "deploy": "bash deploy.sh",
+    "logs": "pm2 logs musix-bot",
+    "monitor": "pm2 monit musix-bot",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@elizaos/core": "^0.1.7",
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/web3": "^1.0.20",
+    "dotenv": "^16.4.7",
+    "elysia": "^1.2.10",
+    "express": "^4.21.2",
+    "fluent-ffmpeg": "^2.1.3",
+    "node-lame": "^1.3.2",
+    "playwright": "^1.49.1",
+    "sox-stream": "^2.0.6",
+    "twitter-api-v2": "^1.19.0",
+    "web3": "^4.16.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "description": ""
+}
